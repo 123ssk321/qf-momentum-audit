@@ -1,0 +1,471 @@
+{
+  "project_slug": "momentum-audit",
+  "first_public_result_month": 5,
+  "total_hours": 312,
+  "reserve_hours": 120,
+  "status": "queued",
+  "milestones": [
+    {
+      "id": "QM-M1",
+      "title": "Question and data audit",
+      "description": "Relative to explicit activation: Months 1–2; 32 task hours + 20 reserve; cumulative 52 hours. Tasks QM-001–QM-004. Exit requires reviewed evidence for each task and a continue/narrow/park decision. Dates stay blank while queued.",
+      "window": "Months 1–2",
+      "work_hours": 32,
+      "reserve_hours": 20,
+      "cumulative_hours": 52
+    },
+    {
+      "id": "QM-M2",
+      "title": "Signal pipeline and baselines",
+      "description": "Relative to explicit activation: Months 1–2; 32 task hours + 20 reserve; cumulative 104 hours. Tasks QM-005–QM-008. Exit requires reviewed evidence for each task and a continue/narrow/park decision. Dates stay blank while queued.",
+      "window": "Months 1–2",
+      "work_hours": 32,
+      "reserve_hours": 20,
+      "cumulative_hours": 104
+    },
+    {
+      "id": "QM-M3",
+      "title": "First public bias audit",
+      "description": "Relative to explicit activation: Month 5; 32 task hours + 20 reserve; cumulative 156 hours. Tasks QM-009–QM-012. Exit requires reviewed evidence for each task and a continue/narrow/park decision. Dates stay blank while queued.",
+      "window": "Month 5",
+      "work_hours": 32,
+      "reserve_hours": 20,
+      "cumulative_hours": 156
+    },
+    {
+      "id": "QM-M4",
+      "title": "Walk-forward and cost study",
+      "description": "Relative to explicit activation: Months 5–7; 32 task hours + 20 reserve; cumulative 208 hours. Tasks QM-013–QM-016. Exit requires reviewed evidence for each task and a continue/narrow/park decision. Dates stay blank while queued.",
+      "window": "Months 5–7",
+      "work_hours": 32,
+      "reserve_hours": 20,
+      "cumulative_hours": 208
+    },
+    {
+      "id": "QM-M5",
+      "title": "Exposure and robustness study",
+      "description": "Relative to explicit activation: Months 6–8; 32 task hours + 20 reserve; cumulative 260 hours. Tasks QM-017–QM-020. Exit requires reviewed evidence for each task and a continue/narrow/park decision. Dates stay blank while queued.",
+      "window": "Months 6–8",
+      "work_hours": 32,
+      "reserve_hours": 20,
+      "cumulative_hours": 260
+    },
+    {
+      "id": "QM-M6",
+      "title": "Final research case and decision",
+      "description": "Relative to explicit activation: Months 7–10; 32 task hours + 20 reserve; cumulative 312 hours. Tasks QM-021–QM-024. Exit requires reviewed evidence for each task and a continue/narrow/park decision. Dates stay blank while queued.",
+      "window": "Months 7–10",
+      "work_hours": 32,
+      "reserve_hours": 20,
+      "cumulative_hours": 312
+    }
+  ],
+  "issues": [
+    {
+      "id": "QM-001",
+      "title": "State hypotheses before data",
+      "body": "## Goal\nState hypotheses before data for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Define variants, direction, horizon and disconfirming result.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `docs/HYPOTHESES.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nNo final holdout is used for design. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nNone beyond activation. Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M1",
+      "depends_on": [],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:definition"
+      ],
+      "phase": "definition"
+    },
+    {
+      "id": "QM-002",
+      "title": "Specify point-in-time contract",
+      "body": "## Goal\nSpecify point-in-time contract for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Map timestamps for prices, sectors, actions and universe.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `docs/TIMING.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nEvery signal input has an availability rule. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-001 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M1",
+      "depends_on": [
+        "QM-001"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:definition"
+      ],
+      "phase": "definition"
+    },
+    {
+      "id": "QM-003",
+      "title": "Inventory data rights and gaps",
+      "body": "## Goal\nInventory data rights and gaps for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Compare public factors, equity prices and optional history.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `docs/DATA_RIGHTS.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nSurvivor and delisting gaps are explicit. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-002 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M1",
+      "depends_on": [
+        "QM-002"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:definition"
+      ],
+      "phase": "definition"
+    },
+    {
+      "id": "QM-004",
+      "title": "Define evaluation split",
+      "body": "## Goal\nDefine evaluation split for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Select training, validation and untouched final period.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `docs/EVALUATION.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nSplit boundaries and revision policy are recorded. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-003 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M1",
+      "depends_on": [
+        "QM-003"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:definition"
+      ],
+      "phase": "definition"
+    },
+    {
+      "id": "QM-005",
+      "title": "Build reproducible factor loader",
+      "body": "## Goal\nBuild reproducible factor loader for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Load public factors with version and archive metadata.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `src/factors.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nRerun recreates same series and checksum. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-004 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M2",
+      "depends_on": [
+        "QM-004"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:prototype"
+      ],
+      "phase": "prototype"
+    },
+    {
+      "id": "QM-006",
+      "title": "Check return arithmetic",
+      "body": "## Goal\nCheck return arithmetic for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Verify simple, log and compounded returns on fixtures.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `tests/test_returns.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nKnown examples match hand calculations. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-005 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M2",
+      "depends_on": [
+        "QM-005"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:prototype"
+      ],
+      "phase": "prototype"
+    },
+    {
+      "id": "QM-007",
+      "title": "Build lagged signal baseline",
+      "body": "## Goal\nBuild lagged signal baseline for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Implement raw 12-1 or stated horizon with strict lag.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `src/signals.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nFuture return perturbation cannot change past signal. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-006 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M2",
+      "depends_on": [
+        "QM-006"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:prototype"
+      ],
+      "phase": "prototype"
+    },
+    {
+      "id": "QM-008",
+      "title": "Add prespecified variants",
+      "body": "## Goal\nAdd prespecified variants for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Implement at most two additional fixed constructions.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `src/variants.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nDefinitions cannot change after holdout lock. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-007 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M2",
+      "depends_on": [
+        "QM-007"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:prototype"
+      ],
+      "phase": "prototype"
+    },
+    {
+      "id": "QM-009",
+      "title": "Build portfolio accounting adapter",
+      "body": "## Goal\nBuild portfolio accounting adapter for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Use Trading Lab or narrow independent ledger interface.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `src/accounting_adapter.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nNo duplicate platform engine is introduced. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-008 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M3",
+      "depends_on": [
+        "QM-008"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:public-alpha"
+      ],
+      "phase": "public-alpha"
+    },
+    {
+      "id": "QM-010",
+      "title": "Calculate IC and turnover",
+      "body": "## Goal\nCalculate IC and turnover for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Compute monthly cross-section metrics with denominators.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `src/metrics.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nMissing observations and weighting are transparent. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-009 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M3",
+      "depends_on": [
+        "QM-009"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:public-alpha"
+      ],
+      "phase": "public-alpha"
+    },
+    {
+      "id": "QM-011",
+      "title": "Test universe bias visibly",
+      "body": "## Goal\nTest universe bias visibly for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Compare a survivor-only proxy against eligible historical scope.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/universe-gap.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nProxy is never described as unbiased equity research. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-010 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M3",
+      "depends_on": [
+        "QM-010"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:public-alpha"
+      ],
+      "phase": "public-alpha"
+    },
+    {
+      "id": "QM-012",
+      "title": "Publish first bias audit",
+      "body": "## Goal\nPublish first bias audit for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Release calculation, timing and data-gap report.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/alpha.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nPublic result has runnable commands and honest caveats. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-011 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M3",
+      "depends_on": [
+        "QM-011"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P1",
+        "status:queued",
+        "phase:public-alpha"
+      ],
+      "phase": "public-alpha"
+    },
+    {
+      "id": "QM-013",
+      "title": "Add walk-forward evaluation",
+      "body": "## Goal\nAdd walk-forward evaluation for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Freeze training and test on forward windows.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `src/walk_forward.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nNo future hyperparameter state enters earlier fold. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-012 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M4",
+      "depends_on": [
+        "QM-012"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:evaluation"
+      ],
+      "phase": "evaluation"
+    },
+    {
+      "id": "QM-014",
+      "title": "Add transaction cost sensitivity",
+      "body": "## Goal\nAdd transaction cost sensitivity for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Sweep declared fees, spread and turnover costs.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/costs.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nPost-cost results name assumed vs observed costs. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-013 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M4",
+      "depends_on": [
+        "QM-013"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:evaluation"
+      ],
+      "phase": "evaluation"
+    },
+    {
+      "id": "QM-015",
+      "title": "Measure signal decay",
+      "body": "## Goal\nMeasure signal decay for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Report IC by horizon with overlap-aware uncertainty.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/decay.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nHorizon definitions and sample sizes are shown. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-014 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M4",
+      "depends_on": [
+        "QM-014"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:evaluation"
+      ],
+      "phase": "evaluation"
+    },
+    {
+      "id": "QM-016",
+      "title": "Report all variants",
+      "body": "## Goal\nReport all variants for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Create full trial log including null results.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/trials.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nNo candidate is omitted from comparison. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-015 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M4",
+      "depends_on": [
+        "QM-015"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:evaluation"
+      ],
+      "phase": "evaluation"
+    },
+    {
+      "id": "QM-017",
+      "title": "Check factor exposures",
+      "body": "## Goal\nCheck factor exposures for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Measure market, size or sector exposure where data support it.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/exposures.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nUnavailable point-in-time features are marked missing. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-016 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M5",
+      "depends_on": [
+        "QM-016"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:reliability"
+      ],
+      "phase": "reliability"
+    },
+    {
+      "id": "QM-018",
+      "title": "Audit corporate actions",
+      "body": "## Goal\nAudit corporate actions for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Test dividends, splits and delisting assumptions.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/actions.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nEvents do not silently disappear from returns. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-017 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M5",
+      "depends_on": [
+        "QM-017"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:reliability"
+      ],
+      "phase": "reliability"
+    },
+    {
+      "id": "QM-019",
+      "title": "Run placebo leakage tests",
+      "body": "## Goal\nRun placebo leakage tests for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Shift timestamps and randomize labels as controls.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `tests/test_leakage.py`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nControls identify expected leakage sensitivity. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-018 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M5",
+      "depends_on": [
+        "QM-018"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:reliability"
+      ],
+      "phase": "reliability"
+    },
+    {
+      "id": "QM-020",
+      "title": "Estimate uncertainty",
+      "body": "## Goal\nEstimate uncertainty for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Use temporal blocks and explicit multiple-testing caveats.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/uncertainty.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nIntervals include method and denominators. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-019 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M5",
+      "depends_on": [
+        "QM-019"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:reliability"
+      ],
+      "phase": "reliability"
+    },
+    {
+      "id": "QM-021",
+      "title": "Package reproducible workflow",
+      "body": "## Goal\nPackage reproducible workflow for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Create bounded command and environment pins.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `README.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nFresh environment reproduces published plots. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-020 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M6",
+      "depends_on": [
+        "QM-020"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:release"
+      ],
+      "phase": "release"
+    },
+    {
+      "id": "QM-022",
+      "title": "Document Trading Lab seam",
+      "body": "## Goal\nDocument Trading Lab seam for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Describe which existing engine functions were reused.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `docs/INTEGRATION.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nSeparate repository has distinct research purpose. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-021 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M6",
+      "depends_on": [
+        "QM-021"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:release"
+      ],
+      "phase": "release"
+    },
+    {
+      "id": "QM-023",
+      "title": "Write portfolio case study",
+      "body": "## Goal\nWrite portfolio case study for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Explain choices, failures and data limits.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `reports/case-study.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nEvery result has source, period and known bias. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-022 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M6",
+      "depends_on": [
+        "QM-022"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:release"
+      ],
+      "phase": "release"
+    },
+    {
+      "id": "QM-024",
+      "title": "Decide licensed-data extension",
+      "body": "## Goal\nDecide licensed-data extension for Momentum Audit, within 8 hours including checks and documentation.\n\n## Steps\n1. Record whether better history justifies continuation.\n2. Check the product boundary: Research two or three prespecified momentum variants, exposure and cost sensitivity, and all failures. Public factor-series results are educational; an individual-stock alpha claim requires point-in-time universe and delisting data.\n3. Record exact commands, versions, seeds, input hashes, failures and actual time.\n\n## Outputs\nFuture repository artifact: `docs/NEXT_DECISION.md`. This planning issue does not claim the artifact exists.\n\n## Acceptance checks\nNo paid data purchase is assumed or authorized. Evidence includes a reproducible command or reviewable document; no result is manufactured during planning.\n\n## Dependencies\nQM-023 Read docs/EXECUTION_PLAN.md and docs/IMPLEMENTER_PROTOCOL.md. Prior milestone exits must pass; this candidate remains queued.\n\n## Review evidence\nAttach the reviewed diff, exact commands and exit codes, relevant report excerpts, input/config hashes, actual hours and reserve draw. Separate measured outcomes from targets. Done requires review and merge.\n\n## Blocker procedure\nRecord the smallest failure and missing prerequisite. Keep dependents queued. Use reserve or propose a narrower scope. Unknown rights block distribution; use generated fallback. Escalate budget, intended-use or release changes before crossing them.",
+      "estimate_hours": 8,
+      "milestone": "QM-M6",
+      "depends_on": [
+        "QM-023"
+      ],
+      "labels": [
+        "type:task",
+        "priority:P2",
+        "status:queued",
+        "phase:release"
+      ],
+      "phase": "release"
+    }
+  ]
+}

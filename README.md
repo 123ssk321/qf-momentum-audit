@@ -1,0 +1,5 @@
+# Momentum Audit
+
+Queued planning repository for original idea #1. No implementation has started. Read [execution plan](docs/EXECUTION_PLAN.md), [research brief](docs/RESEARCH_BRIEF.md), [implementer protocol](docs/IMPLEMENTER_PROTOCOL.md), and [backlog](planning/backlog.json).
+
+The first result is a bounded public artifact in month 5 after activation, not this published plan.
